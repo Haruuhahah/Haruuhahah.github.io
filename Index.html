@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Bloxprutas – Your ultimate destination for Blox Fruits items, including the latest fruits, prices, and more!">
+    <title>Bloxprutas - Blox Fruits Shop</title>
+    <style>
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc;
+            color: #333;
+        }
+
+        /* Global Header and Navigation Styles */
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section Styles */
+        #hero {
+            background: url('https://example.com/bloxfruits-banner.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        #hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: black;
+        }
+
+        #hero button {
+            padding: 12px 25px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        #hero button:hover {
+            background-color: #45a049;
+        }
+
+        /* About Section Styles */
+        #about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Featuring Section Styles */
+        #featuring {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #e9f5e4;
+        }
+
+        #featuring h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #featuring h3 {
+            font-size: 1.8rem;
+            color: #2b6b2f;
+            margin-top: 20px;
+        }
+
+        #featuring img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        #featuring ul {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1rem;
+            text-align: left;
+            margin-top: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        #featuring ul li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #contact a {
+            padding: 12px 25px;
+            background-color: black;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            #hero h2 {
+                font-size: 2.5rem;
+            }
+
+            #hero p {
+                font-size: 1rem;
+            }
+
+            #about p,
+            #featuring p,
+            #contact p {
+                font-size: 1rem;
+            }
+
+            #featuring ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div>
+                <h1>Bloxprutas</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div>
+            <h2>Get Your Favorite Blox Fruits Items!</h2>
+            <p>Buy Blox Fruits Devil Fruits, discover the latest fruits, and learn how to use them effectively!</p>
+            <button onclick="window.location.href='mainpage.html'">Visit Our Shop</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div>
+            <h2>Welcome to Bloxprutas</h2>
+            <p>At Bloxprutas, we offer a wide range of Blox Fruits items, from the latest fruits to popular choices. Whether you're looking to buy the best fruits or learn how to use them effectively, we’ve got you covered. Get ready to dominate the game!</p>
+        </div>
+    </section>
+
+    <!-- Featuring Section -->
+    <section id="featuring">
+        <div>
+            <h2>Featuring: Kitsune</h2>
+            
+                <h3>Featured Fruit: Kitsune</h3>
+                <img src="kitsune.jpg" alt="Featured Fruit">
+                <p>Kitsune is our featured Blox Fruit! Here's everything you need to know about it:</p>
+                <ul>
+                    <li><strong>Type:</strong> Mythical Beast</li>
+                    <li><strong>Cost:</strong> $8,000,000 or 4,000 Robux</li>
+                    <li><strong>Abilities:</strong> Allows the user to transform into a Kitsune</li>
+                    <li><strong>How to Use:</strong> <a href="https://www.youtube.com/watch?v=szS5j2uImd4" target="_blank" style="color: #2b6b2f; text-decoration: underline;">Watch the tutorial on YouTube</a></li>
+                </ul>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div>
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to make a purchase, feel free to reach out to us!</p>
+            <a href="mailto:info@bloxprutas.com">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Bloxprutas. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

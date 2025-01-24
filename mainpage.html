@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloxprutas - Your trusted source for Blox Fruits items">
+    <title>Bloxprutas Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc;  /* This is your background color */
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: transparent;
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none; /* Removes bullets from the list */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FF6347;
+        }
+
+        /* Shop Section */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 70px;
+            background-color: #f5f5dc;  /* Ensures background is maintained */
+        }
+
+        .welcome-message {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 1.2rem;
+        }
+
+        button {
+            background-color: #008CBA;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #005f73;
+        }
+
+        /* Product Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Shop Items Lined Up Horizontally */
+        .product-container {
+            display: flex;
+            justify-content: space-evenly; /* Aligns items horizontally with space between them */
+            flex-wrap: wrap; /* Allows wrapping if screen is too narrow */
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .product-container > div {
+            text-align: center;
+        }
+
+        .product-container ul {
+            padding: 0; /* Removes padding */
+            margin: 0; /* Removes margin */
+        }
+
+        .product-container ul li {
+            list-style-type: none; /* Removes bullets */
+            margin: 0;
+        }
+
+        /* Remove bullets in Guides & Seas sections */
+        #guides ul, #seas ul {
+            list-style-type: none; /* Removes bullets */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .product-container {
+                flex-direction: column; /* Stacks items vertically on small screens */
+                gap: 20px;
+            }
+            section {
+                padding: 30px 10px;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .section-description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Hamburger Menu -->
+    <header>
+        <div class="logo">Bloxprutas</div>
+        <nav>
+            <!-- Desktop Navigation -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#guides">Guides</a></li>
+                <li><a href="#seas">Seas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Welcome Message -->
+    <section id="home">
+        <div class="welcome-message">
+            <h2>Welcome to Bloxprutas!</h2>
+            <p>Your trusted source for the best Blox Fruits items at the lowest prices. We ensure a safe and secure shopping experience. Explore our store, guides, and more!</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+        <h2 class="section-title">Our Shop</h2>
+        <p class="section-description">Browse our collection of Blox Fruits items and unlock the best gear for your adventure!</p>
+
+        <div class="product-container">
+            <!-- Product 1 -->
+            <div>
+                <img src="dragon.jpg" alt="Product Preview" style="width: 100px; height: 100px;"/>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=XsJS2qqogYM" target="_blank">Showcase</a></li>
+                </ul>
+                <h3>Permanent Dragon</h3>
+                <p>Price: $50</p>
+                <button onclick="window.location.href='Transactionpage.html'">Buy Now</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div>
+                <img src="Kitsune.jpg" alt="Product Preview" style="width: 100px; height: 100px;"/>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=9w2-1VgG3fc" target="_blank">Showcase</a></li>
+                </ul>
+                <h3>Permanent Kitsune</h3>
+                <p>Price: $25</p>
+                <button onclick="window.location.href='Transactionpage.html'">Buy Now</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div>
+                <img src="Yeti.jpg" alt="Product Preview" style="width: 100px; height: 100px;"/>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=6d7GO7-05TI" target="_blank">Showcase</a></li>
+                </ul>
+                <h3>Permanent Yeti</h3>
+                <p>Price: $20</p>
+                <button onclick="window.location.href='Transactionpage.html'">Buy Now</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div>
+                <img src="Soul.jpg" alt="Product Preview" style="width: 100px; height: 100px;"/>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=e_2__HOwweA" target="_blank">Showcase</a></li>
+                </ul>
+                <h3>Permanent Spirit</h3>
+                <p>Price: $10</p>
+                <button onclick="window.location.href='Transactionpage.html'">Buy Now</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div>
+                <img src="Buddha.jpg" alt="Product Preview" style="width: 100px; height: 100px;"/>
+                <ul>
+                    <li><a href="https://www.youtube.com/watch?v=hdpS3uNXh70" target="_blank">Showcase</a></li>
+                </ul>
+                <h3>Permanent Buddha</h3>
+                <p>Price: $5</p>
+                <button onclick="window.location.href='Transactionpage.html'">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guides Section -->
+    <section id="guides">
+        <h2 class="section-title">Guides & Tutorials</h2>
+        <p class="section-description">Learn how to use Blox Fruits effectively and dominate the game with our expert guides!</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=m2PhyGa5Yds" target="_blank">Ultimate guide for beginners</a></li>
+            <li><a href="https://www.youtube.com/watch?v=mrkw87IXzL8" target="_blank">How to awaken fruit in Blox Fruits</a></li>
+            <li><a href="https://www.youtube.com/watch?v=irCEsaf7dHc" target="_blank">OP combos in Blox Fruits</a></li>
+        </ul>
+    </section>
+
+    <!-- Seas Section -->
+    <section id="seas">
+        <h2 class="section-title">Seas</h2>
+        <p class="section-description">In Blox Fruits, there are three distinct seas: the First Sea, Second Sea, and Third Sea. Each sea offers unique challenges, powerful enemies, and exciting adventures. As you progress through the seas, you'll encounter stronger opponents, unlock new abilities, and explore even more thrilling areas. Level up and conquer all three seas to become the ultimate Blox Fruits master!</p>
+        <p><b>Here are the guides for all the seas in Blox Fruits:</b></p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=YripDDvMS70&list=PL5aLoRRJVWBRZmrWetv01_6dMYHuMbSxh" target="_blank">First Sea</a></li>
+            <li><a href="https://www.youtube.com/watch?v=35Hou5vMUok" target="_blank">Second Sea</a></li>
+            <li><a href="https://www.youtube.com/watch?v=aZ8n2OkYNvY" target="_blank">Third Sea</a></li>
+        </ul>
+    </section>
+
+    <!-- JavaScript for Hamburger Menu Toggle -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
